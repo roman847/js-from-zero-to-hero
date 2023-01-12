@@ -1,0 +1,70 @@
+.main__content {
+width: 50%;
+text-align: center;
+}
+
+.content__mainTitle{
+  margin-top: 65px;
+}
+
+.content__title{
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.main__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  background-color: var(--main-bg-color);
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.section__titleBlock{
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+
+.section__icon{
+  width: 30px;
+  height: 30px;
+}
+
+/* .information__textContent{
+  margin-top: 10px;
+} */
+
+.education__list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list__link{
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.list__link:hover {
+  opacity: 0.8;
+}
+
+.list__item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 16px;
+}
+
+.skills__list{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}

@@ -7,7 +7,6 @@
   justify-content: end;
   align-items: center;
   gap: 20px;
-  padding: 10px 50px ;
 }
 
 .header__nav{
@@ -19,7 +18,7 @@
 }
 
 .header__nav--close{
-  transform: translateY(-30px);
+  transform: translateY(-100px);
 }
 
 .header__nav--open{
