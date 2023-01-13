@@ -1,0 +1,34 @@
+.projects__slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__line {
+  display: flex;
+  transition: all ease 1s;
+}
+
+.slider__next {
+  position: absolute;
+  top: calc(50% - 24px);
+  right: 0;
+  z-index: 11;
+  background: transparent;
+  border: none;
+  font-size: 48px;
+  cursor: pointer;
+  color: var(--gray-text)
+}
+
+.slider__prev {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: 0;
+  z-index: 11;
+  background: transparent;
+  border: none;
+  font-size: 48px;
+  cursor: pointer;
+  color: var(--gray-text)
+}
