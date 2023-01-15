@@ -1,10 +1,7 @@
 import Slider  from "./Slider.js"
 
-
-
 const burgerButton = document.querySelector('.header__burger')
 const headerNavigation = document.querySelector('.header__nav')
-
 const images = document.querySelectorAll(".slider__img")
 const sliderLine = document.querySelector('.slider__line')
 const nextSlide = document.querySelector('.slider__next')
