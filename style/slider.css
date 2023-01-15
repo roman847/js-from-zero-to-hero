@@ -32,3 +32,24 @@
   cursor: pointer;
   color: var(--gray-text)
 }
+
+.sliderItem__link{
+  transition: 0.4s;
+}
+
+.sliderItem__link:hover {
+  opacity: 0.7;
+}
+
+.link__deploy:hover{
+  transition: 0.4s;
+  color: var(--gray-text)
+}
+
+@media screen and (max-width: 768px) {
+  .slider__next,
+  .slider__prev {
+    display: none;
+  }
+}
+

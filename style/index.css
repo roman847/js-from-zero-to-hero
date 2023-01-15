@@ -14,6 +14,10 @@
   color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -45,10 +49,58 @@ main {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
+  font-size: var(--font-size-25);
 }
 
 .title__underline{
   width: 100%;
   height: 2px;
   background-color:var(--black-text);margin-bottom: 10px;
+}
+
+.section__icon{
+  width: 30px;
+  height: auto;
+}
+
+.list__item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: var(--font-size-18)
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .container {
+    padding: 10px 20px;
+  }
+  .section__title {
+    font-size: var(--font-size-22);
+  }
+  .section__icon{
+    width: 25px;
+    height: auto;
+  }
+  .list__item {
+    font-size: var(--font-size-16)
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px 5px;
+  }
+  .section__title {
+    font-size: var(--font-size-18);
+  }
+  .section__icon {
+    width: 22px;
+  }
+  .list__item {
+    font-size: var(--font-size-14)
+  }
 }

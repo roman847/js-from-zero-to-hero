@@ -10,7 +10,7 @@
 }
 
 .header__nav{
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
@@ -31,7 +31,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--font-size-18);
   line-height: 18px;
   transition: 0.4s;
 }
@@ -71,4 +71,26 @@
   width: 50%;
   height: 2px;
   background-color: var(--black-text);
+}
+
+@media screen and (max-width: 768px) {
+  .item__link{
+    font-size: var(--font-size-16);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container__header{
+    gap: 5px;
+  }
+  .header__nav{
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .header__burger{
+    width: 40px;
+  }
+  .item__link{
+    font-size: var(--font-size-14);
+  }
 }

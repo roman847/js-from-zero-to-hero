@@ -16,13 +16,16 @@
       <div class="container__header">
         <ul class="header__nav header__nav--close">
           <li class="nav__item">
-            <a class="item__link" href="#">Information</a>
+            <a class="item__link" href="#information">Information</a>
           </li>
           <li class="nav__item">
-            <a class="item__link" href="#">Skills</a>
+            <a class="item__link" href="#skills">Skills</a>
           </li>
           <li class="nav__item">
-            <a class="item__link" href="#">My projects</a>
+            <a class="item__link" href="#last-projects">Last projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="item__link" href="#contacts">Contacts</a>
           </li>
         </ul>
         <div class="header__burger header__burger--close">
@@ -35,8 +38,12 @@
     <main>
       <section class="main__content">
         <h3 class="visually-hidden">Information</h3>
-        <h1 class="content__mainTitle content__title">Bogdan Roman</h1>
-        <h2 class="content__title">Frontend developer</h2>
+        <div id="information" class="title__content">
+          <img class="mainContent__avatar" src="assets/img/IMG_20210916_193713.jpg" alt="avatar">
+          <h1 class="content__mainTitle content__title">Bogdan Roman</h1>
+          <h2 class="content__title content__title--description">Frontend developer</h2>
+        </div>
+
         <article class="main__container">
           <div class="section__titleBlock">
             <img class="section__icon" src="assets/img/matt-icons_preferences-desktop-notifications.png"
@@ -44,12 +51,10 @@
             <h2 class="section__title">Information:</h2>
           </div>
           <div class="title__underline"></div>
-          <p class="list__item">My name is Roman. I am belarussian. I am 33 years old. I was born in Brest and I've
-            still
-            lived here.I graduated from radio engineering college and I'm working as an electrical engineer and
+          <p class="list__item">My name is Roman. I am from Belarus. I am 33 years old. I was born in Brest and I've
+            still lived here.I graduated from radio engineering college and I'm working as an electrical engineer and
             a freelancer frontend developer now. I like programming, interested in web development and enjoy studying
-            new technologies day by day
-            so I am open for new challenging.</p>
+            new technologies day by day so I am open for new challenging.</p>
         </article>
         <article class="main__container">
           <div class="section__titleBlock">
@@ -73,7 +78,7 @@
           </ul>
         </article>
         <article class="main__container main__skills">
-          <div class="section__titleBlock">
+          <div id="skills" class="section__titleBlock">
             <img class="section__icon" src="assets/img/123.png" alt="icon">
             <h2 class="section__title">Skills</h2>
           </div>
@@ -96,14 +101,14 @@
           </div>
           <div class="title__underline"></div>
           <p class="list__item">I have done some project with native javascript(web pages with sliders, paginations,
-            popups and so on) using OOP and different libraries fo JS. I have made some project with React an
+            popups and so on) using OOP and different libraries fo JS. I have made some project with React and
             Typescript(todo-lists, online-stores applications, movies-searching applications and so on). Also I have
             worked in a team (Scrum, Jira). It were two not big projects. There were used React,Typescript,Redux (RTK)
             and differents libraries for react.I have worked a lot with HTTP Requests.
           </p>
         </article>
         <article class="aside__container aside__projects">
-          <div class="section__titleBlock">
+          <div id="last-projects" class="section__titleBlock">
             <img class="section__icon"
               src="assets/img/project-icon-business-management-icon-project-management-icon-png-favpng-05qyCDKe21ZX6CfmJZGaDXzN7.jpg"
               alt="icon">
@@ -112,22 +117,24 @@
           <div class="projects__slider">
             <div class="slider__line">
               <figure class="slider__item">
-                <a class="sliderItem__link" href="https://github.com/roman847/pm-app" target="_blank">
+                <a class="sliderItem__link link__deploy" href="https://github.com/roman847/pm-app" target="_blank">
                   <img class="slider__img" src="assets/img/slider/Screenshot_1.png" alt="slider-img">
-                  <a class="list__item" href="https://jirnuy.netlify.app/" target="_blank">Deploy link</a>
+                  <a class="list__item link__deploy" href="https://jirnuy.netlify.app/" target="_blank">Deploy link</a>
                 </a>
               </figure>
               <figure class="slider__item">
-                <a class="sliderItem__link" href="https://github.com/roman847/learn-english-app" target="_blank">
+                <a class="sliderItem__link " href="https://github.com/roman847/learn-english-app" target="_blank">
                   <img class="slider__img" src="assets/img/slider/Screenshot_2.png" alt="slider-img">
-                  <a class="list__item" href="https://glittering-rabanadas-2155da.netlify.app/" target="_blank">Deploy
+                  <a class="list__item link__deploy" href="https://glittering-rabanadas-2155da.netlify.app/"
+                    target="_blank">Deploy
                     link</a>
                 </a>
               </figure class="slider__item">
               <figure>
                 <a class="sliderItem__link" href="https://github.com/roman847/react-movie-app" target="_blank">
                   <img class="slider__img" src="assets/img/slider/Screenshot_3.png" alt="slider-img">
-                  <a class="list__item" href="https://adorable-longma-a7f4ea.netlify.app/">Deploy link (with VPN)</a>
+                  <a class="list__item link__deploy" href="https://adorable-longma-a7f4ea.netlify.app/">Deploy link
+                    (with VPN)</a>
                 </a>
               </figure>
             </div>
@@ -142,23 +149,22 @@
           <article class="aside__contacts">
             <img class="aside__avatar" src="assets/img/IMG_20210916_193713.jpg" alt="avatar">
             <div class="aside__container">
-              <div class="aside__titleBlock">
+              <div id="contacts" class="aside__titleBlock">
                 <h2 class="section__title">Contacts</h2>
                 <div class="title__underline"></div>
               </div>
               <ul class="contacts__list">
                 <li class="contactsList__item">
-                  <img class="contact__icon" src="assets/img/15874.png" alt="phone">
-                  <p>+375295238458</p>
+                  <img class="section__icon" src="assets/img/15874.png" alt="phone">
+                  <p class="list__item">+375295238458</p>
                 </li>
                 <li class="contactsList__item">
-                  <img class="contact__icon" src="assets/img/mail.png" alt="mail">
-                  <a class="contact__link" href="https://accounts.google.com"
-                    target="_blank">romanbogdan147@gmail.com</a>
+                  <img class="section__icon" src="assets/img/mail.png" alt="mail">
+                  <a class="list__item" href="https://accounts.google.com" target="_blank">romanbogdan147@gmail.com</a>
                 </li>
                 <li class="contactsList__item">
-                  <img class="contact__icon" src="assets/img/github-logo_icon-icons.com_73546.png" alt="github">
-                  <a class="contact__link" href="https://github.com/roman847" target="_blank">roman847</a>
+                  <img class="section__icon" src="assets/img/github-logo_icon-icons.com_73546.png" alt="github">
+                  <a class="list__item" href="https://github.com/roman847" target="_blank">roman847</a>
                 </li>
               </ul>
             </div>
@@ -167,8 +173,8 @@
             <h2 class="section__title">Languages</h2>
             <div class="title__underline"></div>
             <ul class="lang__list">
-              <li class="langList__item">Russian(native)</li>
-              <li class="langList__item">English(intermediate)</li>
+              <li class="list__item">Russian(native)</li>
+              <li class="list__item">English(intermediate)</li>
             </ul>
           </article>
           <article class="aside__social aside__container">
@@ -176,12 +182,12 @@
             <div class="title__underline"></div>
             <ul class="lang__list">
               <div class="contactsList__item">
-                <img class="contact__icon" src="assets/img/5968940.png" alt="icon">
-                <li class="langList__item">Telegram +375295238458</li>
+                <img class="section__icon" src="assets/img/5968940.png" alt="icon">
+                <li class="list__item">Telegram +375295238458</li>
               </div>
               <div class="contactsList__item">
-                <img class="contact__icon" src="assets/img/viber.png" alt="icon">
-                <li class="langList__item">Viber +375295238458</li>
+                <img class="section__icon" src="assets/img/viber.png" alt="icon">
+                <li class="list__item">Viber +375295238458</li>
               </div>
             </ul>
           </article>
@@ -196,6 +202,5 @@
 </body>
 <script type="module" src="./js/Slider.js"></script>
 <script type="module" src="./js/index.js"></script>
-
 
 </html>
