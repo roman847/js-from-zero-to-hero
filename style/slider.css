@@ -1,0 +1,55 @@
+.projects__slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__line {
+  display: flex;
+  transition: all ease 1s;
+}
+
+.slider__next {
+  position: absolute;
+  top: calc(50% - 24px);
+  right: 0;
+  z-index: 11;
+  background: transparent;
+  border: none;
+  font-size: 48px;
+  cursor: pointer;
+  color: var(--gray-text)
+}
+
+.slider__prev {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: 0;
+  z-index: 11;
+  background: transparent;
+  border: none;
+  font-size: 48px;
+  cursor: pointer;
+  color: var(--gray-text)
+}
+
+.sliderItem__link{
+  transition: 0.4s;
+}
+
+.sliderItem__link:hover {
+  opacity: 0.7;
+}
+
+.link__deploy:hover{
+  transition: 0.4s;
+  color: var(--gray-text)
+}
+
+@media screen and (max-width: 768px) {
+  .slider__next,
+  .slider__prev {
+    display: none;
+  }
+}
+

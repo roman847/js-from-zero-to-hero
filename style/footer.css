@@ -1,0 +1,28 @@
+.container__footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0px ;
+}
+
+.footer__text{
+  font-weight: 700;
+}
+
+.footer__link:hover{
+  transition: 0.4s;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .container__footer {
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container__footer {
+    padding: 10px 0px;
+  }
+}
